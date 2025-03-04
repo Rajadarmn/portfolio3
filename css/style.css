@@ -412,7 +412,7 @@ a {
     animation: fadeIn 2s ease-in-out;
 }
 
-.social-links-github {
+/* .social-links-github {
     margin-bottom: 20px;
 }
 
@@ -440,7 +440,7 @@ a {
 
 .social-links-linkedin a:hover {
     color: var(--main-color);
-}
+} */
 
 
 /* Animations */
@@ -849,7 +849,7 @@ select::-webkit-scrollbar {
 
 
 
-.android h2 {
+/* .android h2 {
     text-align: center;
     font-size: 3rem;
     font-family: 'StretchPro', sans-serif;
@@ -929,11 +929,11 @@ select::-webkit-scrollbar {
 .android-layer a i {
     font-size: 1.3rem;
     color: var(--black-color-light);
-}
+} */
 
 /* Responsiveness */
 /* Tablet (max-width: 1024px) */
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
     .android-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
@@ -957,10 +957,10 @@ select::-webkit-scrollbar {
     .android-layer a i {
         font-size: 1.2rem;
     }
-}
+} */
 
 /* HP (max-width: 768px) */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .android-container {
         grid-template-columns: 1fr;
         gap: 1.5rem;
@@ -988,10 +988,10 @@ select::-webkit-scrollbar {
     .android-layer a i {
         font-size: 1.1rem;
     }
-}
+} */
 
 /* Extra Small (max-width: 480px) */
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
     .android-container {
         width: 100%;
         padding: 2.5rem;
@@ -1014,4 +1014,4 @@ select::-webkit-scrollbar {
     .android-layer a i {
         font-size: 1rem;
     }
-}
+} */
