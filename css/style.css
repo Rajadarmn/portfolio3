@@ -130,13 +130,12 @@ a {
 .nav__logo,
 .nav__burger,
 .nav__close {
-    
     color: var(--test-color-1);
 }
 
 .nav__logo,
 .nav__burger,
-.nav__close :hover{
+.nav__close :hover {
     color: var(--white-color);
 }
 
@@ -158,7 +157,7 @@ a {
     color: var(--white-color);
 }
 
-.nav__logo:hover{
+.nav__logo:hover {
     color: var(--test-color-2);
     transition: .9s ease-in-out;
 }
@@ -228,17 +227,17 @@ a {
     justify-content: center;
     align-items: center;
     border-bottom: solid transparent 3px;
-    transition: .7s ease-out;
     padding: 1rem 1.5rem;
+    transition: border-bottom 0.7s ease-out, color 0.7s ease-out;
+    margin-top: 12px;
 }
 
 .nav__link:hover {
     border-bottom: solid var(--test-color-1) 3px;
-    margin-top: 4px;
     color: var(--test-color-2);
 }
 
-.nav__link button{
+.nav__link button {
     background-color: transparent;
     border: none;
     box-shadow: none;
@@ -310,7 +309,6 @@ a {
     .nav__link:hover {
         background-color: transparent;
         border-bottom: solid var(--test-color-1) 3px;
-        margin-top: 4px;
         color: var(--test-color-2);
     }
 }
@@ -362,12 +360,6 @@ a {
     transition: background-color 0.4s ease, transform 0.4s ease;
 }
 
-.cta-button i {
-    margin-right: 8px;
-    font-size: 18px;
-    margin-top: 6px;
-}
-
 .cta-button.secondary {
     background-color: transparent;
     border: 2px solid var(--test-color-1);
@@ -390,58 +382,24 @@ a {
     color: var(--white-color);
 }
 
+.cta-button.secondary:active {
+    transform: scale(0.95);
+}
+
 /* Footer Styles */
 .footer {
     text-align: center;
-    padding: 40px;
-    background-color: var(--black-color);
+    padding: 20px;
+    background-color: transparent;
     width: 100%;
     position: fixed;
     bottom: 0;
-}
-
-.footer_link {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    animation: fadeIn 2s ease-in-out;
 }
 
 .footer p {
     color: var(--white-color);
     animation: fadeIn 2s ease-in-out;
 }
-
-/* .social-links-github {
-    margin-bottom: 20px;
-}
-
-.social-links-github a {
-    color: var(--white-color);
-    font-size: 1.5rem;
-    margin: 0 15px;
-    transition: color 0.3s ease;
-}
-
-.social-links-github a:hover {
-    color: var(--black-color-light);
-}
-
-.social-links-linkedin {
-    margin-bottom: 20px;
-}
-
-.social-links-linkedin a {
-    color: var(--white-color);
-    font-size: 1.5rem;
-    margin: 0 15px;
-    transition: color 0.3s ease;
-}
-
-.social-links-linkedin a:hover {
-    color: var(--main-color);
-} */
-
 
 /* Animations */
 @keyframes fadeIn {
@@ -848,170 +806,30 @@ select::-webkit-scrollbar {
 }
 
 
-
-/* .android h2 {
-    text-align: center;
-    font-size: 3rem;
-    font-family: 'StretchPro', sans-serif;
-    font-weight: 700;
-    margin-top: 200px;
-    background: linear-gradient(90deg, #000000, #cdcdcd);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: slideIn 1.5s ease-in-out;
+.Contact-me {
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.4s ease, transform 0.4s ease;
+    margin-left: auto;
+    margin-right: 13px;
+    margin-bottom: 10px;
+    display: block;
+    cursor: pointer;
+    outline: none;
+    width: fit-content;
 }
 
-.android-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5.5rem;
-    padding: 5rem;
-    width: 65%;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-}
-
-.android-box {
-    position: relative;
-    overflow: hidden;
-    border-radius: 2rem;
-    box-shadow: 0 0 1rem var(--white-color);
-}
-
-.android-box img {
-    width: 100%;
-    transition: transform 0.5s ease-in-out;
-}
-
-.android-box:hover img {
+.Contact-me:hover {
+    background-color: var(--white-color);
+    color: black;
     transform: scale(1.1);
 }
 
-.android-layer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .1), var(--black-color-lighten));
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 4rem;
-    transition: transform 0.4s ease-in-out;
-    transform: translateY(100%);
+.Contact-me:active {
+    transform: scale(0.95);
 }
-
-.android-box:hover .android-layer {
-    transform: translateY(0);
-}
-
-.android-layer h4 {
-    font-size: 1.5rem;
-    color: var(--white-color);
-    margin: 0.7rem 0 0.5rem;
-}
-
-.android-layer a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 2.3rem;
-    height: 2.3rem;
-    background: var(--white-color);
-    border-radius: 50%;
-}
-
-.android-layer a i {
-    font-size: 1.3rem;
-    color: var(--black-color-light);
-} */
-
-/* Responsiveness */
-/* Tablet (max-width: 1024px) */
-/* @media screen and (max-width: 1024px) {
-    .android-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-        padding: 3.5rem;
-        width: 75%;
-    }
-
-    .android-layer {
-        padding: 0 2rem;
-    }
-
-    .android-layer h4 {
-        font-size: 1.3rem;
-    }
-
-    .android-layer a {
-        width: 2.2rem;
-        height: 2.2rem;
-    }
-
-    .android-layer a i {
-        font-size: 1.2rem;
-    }
-} */
-
-/* HP (max-width: 768px) */
-/* @media screen and (max-width: 768px) {
-    .android-container {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-        padding: 3rem;
-        width: 70%;
-    }
-
-    .android h2 {
-        font-size: 2.5rem;
-    }
-
-    .android-layer {
-        padding: 0 1.5rem;
-    }
-
-    .android-layer h4 {
-        font-size: 1.2rem;
-    }
-
-    .android-layer a {
-        width: 2rem;
-        height: 2rem;
-    }
-
-    .android-layer a i {
-        font-size: 1.1rem;
-    }
-} */
-
-/* Extra Small (max-width: 480px) */
-/* @media screen and (max-width: 480px) {
-    .android-container {
-        width: 100%;
-        padding: 2.5rem;
-    }
-
-    .android h2 {
-        font-size: 2.5rem;
-        margin-top: 150px;
-    }
-
-    .android-layer h4 {
-        font-size: 1rem;
-    }
-
-    .android-layer a {
-        width: 1.8rem;
-        height: 1.8rem;
-    }
-
-    .android-layer a i {
-        font-size: 1rem;
-    }
-} */
