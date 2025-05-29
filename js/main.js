@@ -25,3 +25,37 @@ window.addEventListener("scroll", () => {
     }
 });
 
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            observer.unobserve(entry.target); // agar animasi hanya terjadi sekali
+        }
+    });
+}, {
+    threshold: 0.2 // 20% terlihat dulu baru muncul
+});
+
+document.querySelectorAll('.portofolio-box').forEach(box => {
+    observer.observe(box);
+});
+
+
+const title = document.querySelector('.portofolio h2');
+
+const titleObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            title.classList.add('show');
+            titleObserver.unobserve(title);
+        }
+    });
+}, {
+    threshold: 0.3
+});
+
+titleObserver.observe(title);
+
+
+
